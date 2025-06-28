@@ -45,6 +45,11 @@ rm -rf feeds/kenzo/luci-theme-argon
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git feeds/luci/themes/luci-theme-argon
 sed -i '41,59d' feeds/luci/themes/luci-theme-argon/luasrc/view/themes/argon/footer.htm
 
+#Linkease
+git clone --depth=1 --single-branch https://github.com/linkease/istore.git
+git clone --depth=1 --single-branch https://github.com/linkease/nas-packages.git
+git clone --depth=1 --single-branch https://github.com/linkease/nas-packages-luci.git
+
 # 微信推送
 rm -rf feeds/kenzo/luci-app-wechatpush
 rm -rf feeds/luci/applications/luci-app-serverchan
